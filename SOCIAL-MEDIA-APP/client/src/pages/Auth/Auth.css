@@ -8,6 +8,12 @@
     position: relative;
 }
 
+@media (max-width: 768px) {
+  .Auth {
+    scale: 0.9;
+  }
+}
+
 .Auth>div{
     display: flex;
     align-items: center;
