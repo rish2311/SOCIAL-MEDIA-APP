@@ -58,7 +58,7 @@ const Auth = () => {
         <img src={Logo} alt="" />
         <div className="Webname">
             <h1>SocialMedia</h1>
-            <h6>Explore the ideas throughout the world</h6>
+            <h6 style = {{ fontSize: "0.75rem"}} >Explore the ideas throughout the world</h6>
         </div>
     </div>
   {/* rightside */}
@@ -67,7 +67,8 @@ const Auth = () => {
                 <h3>{isSignUp ? "Sign Up" : "Log In"}</h3>
 
                 {isSignUp && 
-                <div>
+                <div
+                    style = {{display: "flex", flexWrap: "wrap", height: "100%" }}>
                     <input 
                     type="text" 
                     placeholder='First Name' 
@@ -85,7 +86,7 @@ const Auth = () => {
                     value={data.lastname}   
                     />
                 </div>}
-                <div>
+                <div style = {{ display: "flex", flexWrap: "wrap" }}>
                 <input 
                 type="text" 
                 className="infoInput" 
@@ -116,7 +117,7 @@ const Auth = () => {
                 
                 </div>
 
-                <span style={{display: confirmPass? "none":"block",color:"red", fontSize:"12px", alignSelf:"flex-end",marginRight:"5px"}}>*Confirm Password is not same.</span>
+                <span style={{display: confirmPass? "none":"block",color:"red", position: "relative", bottom: "-72px", fontSize:"12px", alignSelf:"flex-end",marginRight:"5px"}}>*Confirm Password is not same.</span>
 
                 <div>
                     <span style={{fontSize:"12px" , cursor:"pointer"}} onClick={()=>{setIsSignUp((prev)=>!prev); resetForm()}}>

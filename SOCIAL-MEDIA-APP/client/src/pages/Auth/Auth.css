@@ -1,10 +1,17 @@
 .Auth{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     height: 100vh;
     gap: 4rem;
     position: relative;
+}
+
+@media (max-width: 768px) {
+  .Auth {
+    scale: 0.9;
+  }
 }
 
 .Auth>div{
